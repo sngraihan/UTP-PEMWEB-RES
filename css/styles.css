@@ -17,8 +17,10 @@
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px);
+  transition: 0.3s ease;
 }
+
 
 a:hover i {
   color: #0008e9;
@@ -31,3 +33,22 @@ a:hover i {
   width: 100%;
   object-fit: cover;
 }
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.profile-img {
+  animation: floating 1.5s infinite ease-in-out;
+}
+
+
+
